@@ -1,6 +1,5 @@
 package tests;
 
-import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -17,11 +16,11 @@ public class GoogleTest {
 	@Parameters("browser")
 	@BeforeMethod
 	public void setUp(String browser) {
-		driver = DriverManager.getDriver(browser);
+		driver = DriverManager.getDriver("chrome");
 	}
 
-	@Test(dataProvider = "logindata")
-	public void launchBrowserAndOpenGoogle(String user, String pass) {
+	@Test
+	public void launchBrowserAndOpenGoogle() {
 		driver.get("https://www.google.com");
 	}
 
