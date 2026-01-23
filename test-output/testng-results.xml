@@ -1,25 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-27T19:57:33 IST" name="Default suite" finished-at="2025-12-27T19:57:57 IST" duration-ms="23381">
+  <suite started-at="2026-01-22T06:04:11 PST" name="Suite" finished-at="2026-01-22T06:04:17 PST" duration-ms="6083">
     <groups>
     </groups>
-    <test started-at="2025-12-27T19:57:33 IST" name="Default test" finished-at="2025-12-27T19:57:57 IST" duration-ms="23381">
+    <test started-at="2026-01-22T06:04:11 PST" name="Test" finished-at="2026-01-22T06:04:17 PST" duration-ms="6083">
       <class name="tests.GoogleTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.GoogleTest@5b8dfcc1]" started-at="2025-12-27T19:57:33 IST" name="setUp" finished-at="2025-12-27T19:57:54 IST" duration-ms="20741" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.GoogleTest@36d585c]" started-at="2026-01-22T06:04:11 PST" name="setUp" finished-at="2026-01-22T06:04:13 PST" duration-ms="1740" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="launchBrowserAndOpenGoogle()[pri:0, instance:tests.GoogleTest@5b8dfcc1]" started-at="2025-12-27T19:57:54 IST" name="launchBrowserAndOpenGoogle" finished-at="2025-12-27T19:57:56 IST" duration-ms="1765" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.GoogleTest@36d585c]" started-at="2026-01-22T06:04:11 PST" name="setUp" finished-at="2026-01-22T06:04:13 PST" duration-ms="1740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="launchBrowserAndOpenGoogle()[pri:0, instance:tests.GoogleTest@36d585c]" started-at="2026-01-22T06:04:13 PST" name="launchBrowserAndOpenGoogle" finished-at="2026-01-22T06:04:14 PST" duration-ms="904" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowserAndOpenGoogle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.GoogleTest@5b8dfcc1]" started-at="2025-12-27T19:57:56 IST" name="tearDown" finished-at="2025-12-27T19:57:57 IST" duration-ms="824" status="PASS">
+        <test-method signature="launchBrowserAndOpenGoogle2()[pri:0, instance:tests.GoogleTest@36d585c]" started-at="2026-01-22T06:04:13 PST" name="launchBrowserAndOpenGoogle2" finished-at="2026-01-22T06:04:16 PST" duration-ms="3507" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Google] but found [Automation Exercise]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Google] but found [Automation Exercise]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at tests.GoogleTest.launchBrowserAndOpenGoogle2(GoogleTest.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowserAndOpenGoogle2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.GoogleTest@36d585c]" started-at="2026-01-22T06:04:14 PST" name="tearDown" finished-at="2026-01-22T06:04:14 PST" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.GoogleTest@36d585c]" started-at="2026-01-22T06:04:17 PST" name="tearDown" finished-at="2026-01-22T06:04:17 PST" duration-ms="160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.GoogleTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -7,7 +7,7 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="launchBrowserAndOpenGoogle"/>
+          <include name="launchBrowserAndOpenGoogle2"/>
         </methods>
       </class> <!-- tests.GoogleTest -->
     </classes>

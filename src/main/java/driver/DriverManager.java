@@ -1,6 +1,5 @@
 package driver;
 
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -8,38 +7,41 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverManager {
 
-	private static WebDriver driver;
+    private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
-	private DriverManager() {
-	}
+    private DriverManager() {}
 
-	public static WebDriver getDriver(String browser) {
+    public static void setDriver(String browser) {
 
-		if (driver == null) {
+        if (driver.get() == null) {
 
-			if (browser.equalsIgnoreCase("chrome")) {
+            WebDriver driverRef;
 
-				ChromeOptions options = new ChromeOptions();
-				options.addArguments("--start-maximized");
-				driver = new ChromeDriver(options);
+            if (browser.equalsIgnoreCase("chrome")) {
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("--start-maximized");
+                driverRef = new ChromeDriver(options);
 
-			} else if (browser.equalsIgnoreCase("firefox")) {
-				
-				driver = new FirefoxDriver();
-				driver.manage().window().maximize();
+            } else if (browser.equalsIgnoreCase("firefox")) {
+                driverRef = new FirefoxDriver();
+                driverRef.manage().window().maximize();
 
-			} else {
-				throw new RuntimeException("Unsupported browser: " + browser);
-			}
-		}
-		
-		return driver;
-	}
+            } else {
+                throw new RuntimeException("Unsupported browser: " + browser);
+            }
 
-	public static void quitDriver() {
-		if (driver != null) {
-			driver.quit();
-			driver = null;
-		}
-	}
+            driver.set(driverRef); // 🔥 MOST IMPORTANT LINE
+        }
+    }
+
+    public static WebDriver getDriver() {
+        return driver.get();
+    }
+
+    public static void quitDriver() {
+        if (driver.get() != null) {
+            driver.get().quit();
+            driver.remove();
+        }
+    }
 }
