@@ -23,7 +23,6 @@ public class GoogleTest {
 	@Test
 	public void launchBrowserAndOpenGoogle() throws IOException {
         WebDriver driver = DriverManager.getDriver(); // 🔥 fetch per thread
-
 //		test = extent.createTest("Google lauch through chrome");
 		driver.get("https://www.google.com");
 //		test.addScreenCaptureFromBase64String(((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64), "png_1");
