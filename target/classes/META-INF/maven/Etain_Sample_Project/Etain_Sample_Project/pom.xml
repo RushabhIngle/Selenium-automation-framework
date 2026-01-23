@@ -19,8 +19,10 @@
 				<configuration>
 					<forkCount>1</forkCount>
 					<reuseForks>true</reuseForks>
-					<parallel>methods</parallel>
-					<threadCount>2</threadCount>
+					<suiteXmlFiles>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+					
 				</configuration>
 			</plugin>
 		</plugins>
