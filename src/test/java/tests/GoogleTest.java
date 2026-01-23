@@ -32,14 +32,14 @@ public class GoogleTest {
 	}
 
 	@Test
-	public void launchBrowserAndOpenGoogle2() throws IOException {
+	public void launchAutomationExercise() throws IOException {
         WebDriver driver = DriverManager.getDriver(); // 🔥 fetch per thread
 
 //		test = extent.createTest("Google lauch through chrome");
 		driver.get("https://automationexercise.com/");
 //		test.addScreenCaptureFromBase64String(((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64), "png_1");
 //		test.info("validate title");
-		Assert.assertEquals(driver.getTitle(), "Google");
+		Assert.assertEquals(driver.getTitle(), "Automation Exercise");
 //		test.pass("passed");
 	}
 

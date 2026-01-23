@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-22T06:04:11 PST" name="Suite" finished-at="2026-01-22T06:04:17 PST" duration-ms="6083">
+  <suite started-at="2026-01-23T06:15:23 PST" name="Suite" finished-at="2026-01-23T06:15:29 PST" duration-ms="5977">
     <groups>
     </groups>
-    <test started-at="2026-01-22T06:04:11 PST" name="Test" finished-at="2026-01-22T06:04:17 PST" duration-ms="6083">
+    <test started-at="2026-01-23T06:15:23 PST" name="Test" finished-at="2026-01-23T06:15:29 PST" duration-ms="5977">
       <class name="tests.GoogleTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.GoogleTest@36d585c]" started-at="2026-01-22T06:04:11 PST" name="setUp" finished-at="2026-01-22T06:04:13 PST" duration-ms="1740" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.GoogleTest@36d585c]" started-at="2026-01-23T06:15:23 PST" name="setUp" finished-at="2026-01-23T06:15:25 PST" duration-ms="1875" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.GoogleTest@36d585c]" started-at="2026-01-22T06:04:11 PST" name="setUp" finished-at="2026-01-22T06:04:13 PST" duration-ms="1740" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.GoogleTest@36d585c]" started-at="2026-01-23T06:15:23 PST" name="setUp" finished-at="2026-01-23T06:15:25 PST" duration-ms="1874" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="launchBrowserAndOpenGoogle()[pri:0, instance:tests.GoogleTest@36d585c]" started-at="2026-01-22T06:04:13 PST" name="launchBrowserAndOpenGoogle" finished-at="2026-01-22T06:04:14 PST" duration-ms="904" status="PASS">
+        <test-method signature="launchBrowserAndOpenGoogle()[pri:0, instance:tests.GoogleTest@36d585c]" started-at="2026-01-23T06:15:25 PST" name="launchBrowserAndOpenGoogle" finished-at="2026-01-23T06:15:26 PST" duration-ms="939" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowserAndOpenGoogle -->
-        <test-method signature="launchBrowserAndOpenGoogle2()[pri:0, instance:tests.GoogleTest@36d585c]" started-at="2026-01-22T06:04:13 PST" name="launchBrowserAndOpenGoogle2" finished-at="2026-01-22T06:04:16 PST" duration-ms="3507" status="FAIL">
+        <test-method signature="launchBrowserAndOpenGoogle2()[pri:0, instance:tests.GoogleTest@36d585c]" started-at="2026-01-23T06:15:25 PST" name="launchBrowserAndOpenGoogle2" finished-at="2026-01-23T06:15:28 PST" duration-ms="3530" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Google] but found [Automation Exercise]]]>
@@ -32,7 +32,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at tests.GoogleTest.launchBrowserAndOpenGoogle2(GoogleTest.java:43)
+at tests.GoogleTest.launchBrowserAndOpenGoogle2(GoogleTest.java:42)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -57,11 +57,11 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowserAndOpenGoogle2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.GoogleTest@36d585c]" started-at="2026-01-22T06:04:14 PST" name="tearDown" finished-at="2026-01-22T06:04:14 PST" duration-ms="127" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.GoogleTest@36d585c]" started-at="2026-01-23T06:15:26 PST" name="tearDown" finished-at="2026-01-23T06:15:26 PST" duration-ms="128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.GoogleTest@36d585c]" started-at="2026-01-22T06:04:17 PST" name="tearDown" finished-at="2026-01-22T06:04:17 PST" duration-ms="160" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.GoogleTest@36d585c]" started-at="2026-01-23T06:15:29 PST" name="tearDown" finished-at="2026-01-23T06:15:29 PST" duration-ms="154" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
